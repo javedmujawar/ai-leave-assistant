@@ -4,7 +4,7 @@ from langchain_ollama import OllamaEmbeddings
 from langchain_chroma import Chroma
 
 # 1. load document
-loader = TextLoader("data/leave_policy.txt")
+loader = TextLoader("./app/data/leave_policy.txt")
 documents = loader.load()
 
 print(f"Loaded {len(documents)} documents")
